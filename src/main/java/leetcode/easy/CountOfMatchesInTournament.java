@@ -1,32 +1,23 @@
 package leetcode.easy;
 
 /**
- * {@link https://leetcode.com/problems/count-of-matches-in-tournament/}
+ * @url https://leetcode.com/problems/count-of-matches-in-tournament/
  * @author jang.cm
+ * @since 1.0
  */
 
 public class CountOfMatchesInTournament {
 
-    public static void main(String[] args) {
-
-        System.out.println("tesggggggggggt");
-
-    }
-
-
-
-}
-
-class Solution1 {
-    public int numberOfMatches(int n) {
+    public int numberOfMatchesSolution1(int n){
 
         return n-1;
     }
-}
 
-class Solution2 {
-    public int numberOfMatches(int n) {
+    public int numberOfMatchesSolution2(int n){
 
-        return n-1;
+        if(n == 1) return 0;
+        return n % 2 == 0 ? numberOfMatchesSolution2(n/2) + n/2: numberOfMatchesSolution2( ((n-1)/2) +1) + (n-1)/2 ;
+
     }
+
 }
