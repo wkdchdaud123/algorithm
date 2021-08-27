@@ -1,6 +1,9 @@
 package performance;
 
-public class StringTest {
+final class StringTest {
+
+    public static int testStaticInt = 10;
+    public int testint = 10;
 
     public static void main(String[] args) {
         String test = "";

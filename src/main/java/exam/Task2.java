@@ -1,6 +1,7 @@
 package exam;
 
 import java.util.HashMap;
+import java.util.Optional;
 
 public class Task2 {
 
@@ -15,7 +16,6 @@ class SolutionTask2 {
     private HashMap<String, Integer[]> seasonMap;
 
     public String solution (int [] T) {
-
 
         SeasonStateTask2 seasonStateTask2 = new SeasonStateTask2(SeasonTask2.WINTER);
 

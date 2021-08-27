@@ -20,7 +20,7 @@ class Solution3 {
         int i = 0, j = 0, max = 0;
         Set<Character> set = new HashSet<>();
 
-        /*List list = new ArrayList<>();
+        /*List list = new ArrayList<>();172.27.224.0
         list.re()*/
         while (j < s.length()) {
             if (set.contains(s.charAt(j))) {
